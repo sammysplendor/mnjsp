@@ -2,19 +2,20 @@
 
 import { useRouter } from "next/navigation";
 
-const About = () => {
+const Contact = () => {
   const router = useRouter();
+
   return (
     <div className="flex flex-col gap-5">
-      <h1>About Page</h1>
+      <h1>Contact Page</h1>
       <button
         className="bg-black text-white w-fit p-2 rounded-lg cursor-pointer"
-        onClick={() => router.push("/contact")}
+        onClick={() => router.push("/about")}
       >
-        Go to Contact Page
+        Go to About Page
       </button>
     </div>
   );
 };
 
-export default About;
+export default Contact;
