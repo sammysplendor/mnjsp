@@ -1,4 +1,14 @@
-// "use client";
+export const generateMetadata = async ({
+  params,
+}: {
+  params: { blogId: string };
+}) => {
+  const { blogId } = await params;
+
+  return {
+    title: `Blog ${blogId}`,
+  };
+};
 
 const Blog = async ({ params }: { params: { blogId: string } }) => {
   const { blogId } = await params;

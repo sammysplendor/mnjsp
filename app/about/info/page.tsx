@@ -1,4 +1,7 @@
-// "use client";
+export const metadata = {
+  title: "Info",
+  description: "Information page",
+};
 
 const Info = () => {
   return (
