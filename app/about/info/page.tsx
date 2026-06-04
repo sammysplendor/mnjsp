@@ -1,3 +1,5 @@
+import infoStyles from "./info.module.css";
+
 export const metadata = {
   title: "Info",
   description: "Information page",
@@ -5,7 +7,7 @@ export const metadata = {
 
 const Info = () => {
   return (
-    <div className="flex flex-col gap-5">
+    <div className={infoStyles.title}>
       <h1>Information</h1>
     </div>
   );
